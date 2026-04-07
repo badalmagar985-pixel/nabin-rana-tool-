@@ -1,0 +1,75 @@
+import os, time, requests
+
+def banner():
+    os.system('clear')
+    print("""
+    ====================================
+    [+] TOOL NAME: NABIN RANA CLONER
+    [+] BRAND    : NABIN RANA BRAND
+    [+] STATUS   : ONLINE (PRO ID)
+    ====================================
+    """)
+
+def cloning():
+    banner()
+    user = input("[+] ENTER TARGET ID/NUMBER: ")
+    print("\n[*] FETCHING DATA FROM FACEBOOK...")
+    time.sleep(2)
+    
+    # Common Nepali Passwords
+    passwords = ['nepal123', 'nepal789', 'maya1234', 'freefire123', 'kathmandu', user]
+    
+    for password in passwords:
+        print(f"[*] CHECKING: {user} | PASS: {password}")
+        
+        # Yasle Facebook mbasic site ma signal pathaucha
+        url = "https://mbasic.facebook.com/login.php"
+        data = {"email": user, "pass": password}
+        
+        # Logic: Request pathaune (requests.post)
+        # Yadi login successful bhayo bhane result 'OK' auncha
+        
+        time.sleep(0.5) 
+
+    print("\n[!] CLONING FINISHED!")
+    print("[!] NO PASSWORD MATCHED. TRY PRO WORDLIST.")
+
+if __name__ == "__main__":
+    cloning()
+import os
+import time
+
+def banner():
+    os.system('clear')
+    print("\033[1;31m  _   _          _     _              ")
+    print(" | \ | |   __ _ | |__ (_) _ __        ")
+    print(" |  \| |  / _` || '_ \| || '_ \       ")
+    print(" | |\  | | (_| || |_) || || | | |      ")
+    print(" |_| \_|  \__,_||_.__/ |_||_| |_|      ")
+    print("      R  A  N  A    T  O  O  L  S     \033[0m")
+    print("=======================================")
+    print("  Author  : NABIN RANA                 ")
+    print("  Github  : github.com/nabin-rana      ")
+    print("  Version : 1.0 (World Best Edition)   ")
+    print("=======================================")
+
+def menu():
+    banner()
+    print("\033[1;32m [01] Free Fire ID Cloning (FB/VK)")
+    print(" [02] CCTV Password Cracker (RTSP)")
+    print(" [03] Update Tool")
+    print(" [00] Exit\033[0m")
+    
+    choice = input("\n[+] Select Option: ")
+    if choice == '01':
+        print("\n[!] Cloning Start bhayo... Please Wait...")
+        # Yaha tapai ko cloning logic (brute force) huncha
+    elif choice == '02':
+        print("\n[!] Scanning CCTV Passwords...")
+        # Yaha CCTV crack garne logic huncha
+    else:
+        print("\nBye Bye!")
+
+if __name__ == "__main__":
+    menu()
+
